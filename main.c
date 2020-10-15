@@ -5,7 +5,7 @@
 int main() {
     int indicator = -1;
     int EnterCode, EnterNumber;
-    char EnterName[20];
+    char EnterName[21];
     Phone* list = NULL;
 
     while(indicator!=0){
@@ -31,7 +31,7 @@ int main() {
             fflush (stdout);
             scanf("%d", &EnterCode);
             scanf("%d", &EnterNumber);
-            scanf("%19s", EnterName);
+            scanf("%20s", EnterName);
             push(&list, EnterCode, EnterNumber, EnterName);
         }
         else if(indicator == 0){
