@@ -1,0 +1,2 @@
+/home/foxers/CLionProjects/phonegit/tests/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/foxers/CLionProjects/phonegit/tests/cmake-build-debug/CMakeFiles/edit_cache.dir
