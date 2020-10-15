@@ -87,17 +87,6 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/snap/clion/129/bin/cmake/linux/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-
-.PHONY : test/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -108,6 +97,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/snap/clion/129/bin/cmake/linux/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -153,6 +153,19 @@ phone2: cmake_check_build_system
 phone2/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/phone2.dir/build.make CMakeFiles/phone2.dir/build
 .PHONY : phone2/fast
+
+#=============================================================================
+# Target rules for targets named g_test
+
+# Build rule for target.
+g_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 g_test
+.PHONY : g_test
+
+# fast build rule for target.
+g_test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/g_test.dir/build.make CMakeFiles/g_test.dir/build
+.PHONY : g_test/fast
 
 #=============================================================================
 # Target rules for targets named gtest
@@ -240,7 +253,7 @@ tests/test.o: tests/test.cpp.o
 
 # target to build an object file
 tests/test.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/phone2.dir/build.make CMakeFiles/phone2.dir/tests/test.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/g_test.dir/build.make CMakeFiles/g_test.dir/tests/test.cpp.o
 .PHONY : tests/test.cpp.o
 
 tests/test.i: tests/test.cpp.i
@@ -249,7 +262,7 @@ tests/test.i: tests/test.cpp.i
 
 # target to preprocess a source file
 tests/test.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/phone2.dir/build.make CMakeFiles/phone2.dir/tests/test.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/g_test.dir/build.make CMakeFiles/g_test.dir/tests/test.cpp.i
 .PHONY : tests/test.cpp.i
 
 tests/test.s: tests/test.cpp.s
@@ -258,7 +271,7 @@ tests/test.s: tests/test.cpp.s
 
 # target to generate assembly for a file
 tests/test.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/phone2.dir/build.make CMakeFiles/phone2.dir/tests/test.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/g_test.dir/build.make CMakeFiles/g_test.dir/tests/test.cpp.s
 .PHONY : tests/test.cpp.s
 
 # Help Target
@@ -270,6 +283,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... g_test"
 	@echo "... gtest"
 	@echo "... gtest_main"
 	@echo "... phone2"

@@ -1,0 +1,1 @@
+/usr/bin/g++  -g   CMakeFiles/g_test.dir/tests/test.cpp.o  -o g_test 

@@ -1,7 +1,8 @@
 /home/foxers/CLionProjects/phone/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/foxers/CLionProjects/phone/cmake-build-debug/CMakeFiles/test.dir
-/home/foxers/CLionProjects/phone/cmake-build-debug/CMakeFiles/edit_cache.dir
 /home/foxers/CLionProjects/phone/cmake-build-debug/CMakeFiles/phone2.dir
+/home/foxers/CLionProjects/phone/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/foxers/CLionProjects/phone/cmake-build-debug/CMakeFiles/g_test.dir
+/home/foxers/CLionProjects/phone/cmake-build-debug/CMakeFiles/test.dir
 /home/foxers/CLionProjects/phone/cmake-build-debug/googletest/CMakeFiles/rebuild_cache.dir
 /home/foxers/CLionProjects/phone/cmake-build-debug/googletest/CMakeFiles/gtest.dir
 /home/foxers/CLionProjects/phone/cmake-build-debug/googletest/CMakeFiles/gtest_main.dir

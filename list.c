@@ -23,4 +23,3 @@ void PrintCode(const Phone* list, const int code) {
         }
     }
 }
-

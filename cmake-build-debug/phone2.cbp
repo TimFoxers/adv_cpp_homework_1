@@ -27,26 +27,6 @@
 					<DistClean command="make -j4 -f &quot;/home/foxers/CLionProjects/phone/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="test">
-				<Option working_dir="/home/foxers/CLionProjects/phone/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="make -j4 -f &quot;/home/foxers/CLionProjects/phone/cmake-build-debug/Makefile&quot;  VERBOSE=1 test"/>
-					<CompileFile command="make -j4 -f &quot;/home/foxers/CLionProjects/phone/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="make -j4 -f &quot;/home/foxers/CLionProjects/phone/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="make -j4 -f &quot;/home/foxers/CLionProjects/phone/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="edit_cache">
-				<Option working_dir="/home/foxers/CLionProjects/phone/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="make -j4 -f &quot;/home/foxers/CLionProjects/phone/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="make -j4 -f &quot;/home/foxers/CLionProjects/phone/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="make -j4 -f &quot;/home/foxers/CLionProjects/phone/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="make -j4 -f &quot;/home/foxers/CLionProjects/phone/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
 			<Target title="phone2">
 				<Option output="/home/foxers/CLionProjects/phone/cmake-build-debug/phone2" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/foxers/CLionProjects/phone/cmake-build-debug"/>
@@ -54,6 +34,9 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
@@ -74,6 +57,9 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
@@ -82,6 +68,72 @@
 				</Compiler>
 				<MakeCommands>
 					<Build command="make -j4 -f &quot;/home/foxers/CLionProjects/phone/cmake-build-debug/Makefile&quot;  VERBOSE=1 phone2/fast"/>
+					<CompileFile command="make -j4 -f &quot;/home/foxers/CLionProjects/phone/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="make -j4 -f &quot;/home/foxers/CLionProjects/phone/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="make -j4 -f &quot;/home/foxers/CLionProjects/phone/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/foxers/CLionProjects/phone/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="make -j4 -f &quot;/home/foxers/CLionProjects/phone/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="make -j4 -f &quot;/home/foxers/CLionProjects/phone/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="make -j4 -f &quot;/home/foxers/CLionProjects/phone/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="make -j4 -f &quot;/home/foxers/CLionProjects/phone/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="g_test">
+				<Option output="/home/foxers/CLionProjects/phone/cmake-build-debug/g_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/foxers/CLionProjects/phone/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="make -j4 -f &quot;/home/foxers/CLionProjects/phone/cmake-build-debug/Makefile&quot;  VERBOSE=1 g_test"/>
+					<CompileFile command="make -j4 -f &quot;/home/foxers/CLionProjects/phone/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="make -j4 -f &quot;/home/foxers/CLionProjects/phone/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="make -j4 -f &quot;/home/foxers/CLionProjects/phone/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="g_test/fast">
+				<Option output="/home/foxers/CLionProjects/phone/cmake-build-debug/g_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/foxers/CLionProjects/phone/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="make -j4 -f &quot;/home/foxers/CLionProjects/phone/cmake-build-debug/Makefile&quot;  VERBOSE=1 g_test/fast"/>
+					<CompileFile command="make -j4 -f &quot;/home/foxers/CLionProjects/phone/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="make -j4 -f &quot;/home/foxers/CLionProjects/phone/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="make -j4 -f &quot;/home/foxers/CLionProjects/phone/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test">
+				<Option working_dir="/home/foxers/CLionProjects/phone/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="make -j4 -f &quot;/home/foxers/CLionProjects/phone/cmake-build-debug/Makefile&quot;  VERBOSE=1 test"/>
 					<CompileFile command="make -j4 -f &quot;/home/foxers/CLionProjects/phone/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="make -j4 -f &quot;/home/foxers/CLionProjects/phone/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="make -j4 -f &quot;/home/foxers/CLionProjects/phone/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -96,6 +148,9 @@
 				<Compiler>
 					<Add directory="/home/foxers/CLionProjects/phone/googletest/include"/>
 					<Add directory="/home/foxers/CLionProjects/phone/googletest"/>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
@@ -118,6 +173,9 @@
 				<Compiler>
 					<Add directory="/home/foxers/CLionProjects/phone/googletest/include"/>
 					<Add directory="/home/foxers/CLionProjects/phone/googletest"/>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
@@ -140,6 +198,9 @@
 				<Compiler>
 					<Add directory="/home/foxers/CLionProjects/phone/googletest/include"/>
 					<Add directory="/home/foxers/CLionProjects/phone/googletest"/>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
@@ -162,6 +223,9 @@
 				<Compiler>
 					<Add directory="/home/foxers/CLionProjects/phone/googletest/include"/>
 					<Add directory="/home/foxers/CLionProjects/phone/googletest"/>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
@@ -192,7 +256,7 @@
 			<Option target="phone2"/>
 		</Unit>
 		<Unit filename="/home/foxers/CLionProjects/phone/tests/test.cpp">
-			<Option target="phone2"/>
+			<Option target="g_test"/>
 		</Unit>
 		<Unit filename="/home/foxers/CLionProjects/phone/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>

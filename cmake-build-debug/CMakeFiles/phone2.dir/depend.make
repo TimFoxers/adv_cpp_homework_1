@@ -7,6 +7,3 @@ CMakeFiles/phone2.dir/list.c.o: ../phone.h
 CMakeFiles/phone2.dir/main.c.o: ../main.c
 CMakeFiles/phone2.dir/main.c.o: ../phone.h
 
-CMakeFiles/phone2.dir/tests/test.cpp.o: ../phone.h
-CMakeFiles/phone2.dir/tests/test.cpp.o: ../tests/test.cpp
-

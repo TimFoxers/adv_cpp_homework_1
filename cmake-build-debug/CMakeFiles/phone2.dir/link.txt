@@ -1,0 +1,1 @@
+/usr/bin/gcc -g   CMakeFiles/phone2.dir/main.c.o CMakeFiles/phone2.dir/list.c.o  -o phone2 

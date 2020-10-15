@@ -6,21 +6,19 @@
 
 #IncludeRegexTransform: 
 
-/home/foxers/CLionProjects/phone/list.c
+/home/foxers/CLionProjects/phone/phone.h
 stdio.h
 -
 stdlib.h
 -
 string.h
 -
-phone.h
-/home/foxers/CLionProjects/phone/phone.h
 
+/home/foxers/CLionProjects/phone/tests/test.cpp
+gtest/gtest.h
+-
+iostream
+-
+../phone.h
 /home/foxers/CLionProjects/phone/phone.h
-stdio.h
--
-stdlib.h
--
-string.h
--
 
